@@ -15,7 +15,7 @@ kintone アプリのカスタマイズ開発と設定管理のためのテンプ
 
 派生リポジトリを clone した直後に以下を済ませる。手順 3〜4 を飛ばすと `trunks` / `ginue` が動かない。
 
-1. `yarn install` で依存をインストール
+1. `npm install` で依存をインストール
 2. `package.json` の `name` / `description` / `version` を自プロジェクトの値に書き換え
 3. `.ginuerc.js` のドメイン（`your-dev.cybozu.com` / `your-prod.cybozu.com`）と `env.*.app` の `appId` を実際の値に差し替え
 4. `npx @goqoo/trunks init` で `trunks.config.ts` を対話的に作成（host / apps / auth を設定）
@@ -27,7 +27,7 @@ kintone アプリのカスタマイズ開発と設定管理のためのテンプ
 
 ```bash
 # 依存関係
-yarn install
+npm install
 
 # kintone から設定をダウンロード
 npx ginue pull development
@@ -46,13 +46,13 @@ npx @goqoo/trunks
 npx @goqoo/trunks init
 
 # 型チェック（tsc --noEmit）
-yarn typecheck
+npm run typecheck
 
 # コードフォーマット（.md は対象外）
-yarn format
+npm run format
 
 # フォーマット確認のみ
-yarn format:check
+npm run format:check
 ```
 
 ## フィールド型生成（trunks）
