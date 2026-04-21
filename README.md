@@ -154,7 +154,7 @@ kintone の [JavaScript / CSS カスタマイズ](https://jp.cybozu.help/k/ja/us
 - **ginue**: コマンド実行時に対話的に入力
 - **trunks**: プロジェクトルートの `.env`（`KINTONE_USERNAME` / `KINTONE_PASSWORD` / `KINTONE_API_TOKEN`）または `~/.netrc` から読み込む。未設定時は stdin で対話入力
 
-`.env` および `kintone-settings/` 配下の認証関連ファイルはコミットしないこと（`.gitignore` で除外済み）。
+`.env` および認証関連ファイルはコミットしないこと（`.gitignore` で除外済み）。
 
 ## ライセンス
 
