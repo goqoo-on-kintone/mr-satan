@@ -1,5 +1,5 @@
 //@ts-check
-// sample アプリ内の各カスタマイズで共通利用する定数・関数
+// sample1 アプリ内の各カスタマイズで共通利用する定数・関数
 // アプリ内の他 JS（edit-show.js など）より先に読み込むこと
 {
   /**
@@ -15,8 +15,14 @@
     return true;
   }
 
-  // グローバル公開（他ファイルからは window.__sampleCommon で参照）
-  /** @type {any} */ (window).__sampleCommon = Object.freeze({
+  /** 今日の日付を kintone の Date フィールド互換フォーマット（yyyy-MM-dd）で返す */
+  function today() {
+    return luxon.DateTime.now().toFormat('yyyy-MM-dd');
+  }
+
+  // グローバル公開（他ファイルからは window.__sample1Common で参照）
+  /** @type {any} */ (window).__sample1Common = Object.freeze({
     hasValue,
+    today,
   });
 }

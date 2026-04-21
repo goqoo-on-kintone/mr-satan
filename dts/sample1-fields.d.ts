@@ -1,13 +1,13 @@
-// @kintone/dts-gen で生成したフィールド型定義のサンプル
-// 実際のアプリからは `npx @kintone/dts-gen -d your-domain.cybozu.com -u username -p password --app-id 1 -o dts/sample-fields.d.ts` で生成する
+// @goqoo/trunks で生成したフィールド型定義のサンプル（sample1 アプリ）
+// 実アプリでは `npx @goqoo/trunks` で再生成される
 declare namespace kintone.types {
-  interface SampleFields {
+  interface Sample1Fields {
     件名: kintone.fieldTypes.SingleLineText;
     本文: kintone.fieldTypes.MultiLineText;
     担当者: kintone.fieldTypes.UserSelect;
     期日: kintone.fieldTypes.Date;
   }
-  interface SavedSampleFields extends SampleFields {
+  interface SavedSample1Fields extends Sample1Fields {
     $id: kintone.fieldTypes.Id;
     $revision: kintone.fieldTypes.Revision;
     更新者: kintone.fieldTypes.Modifier;
