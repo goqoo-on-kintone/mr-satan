@@ -39,8 +39,14 @@ npx ginue pull development -A sample
 # kintone に設定をアップロード
 npx ginue push development -A sample
 
+# 型チェック（ビルドはしない）
+yarn typecheck
+
 # コードフォーマット
 yarn format
+
+# フォーマット確認のみ（コミット前や CI 向け）
+yarn format:check
 ```
 
 ## ディレクトリ構成

@@ -3,7 +3,9 @@
   "private": true,
   "description": "Template repository for kintone customization and settings management",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "kintone",

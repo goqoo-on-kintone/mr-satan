@@ -45,8 +45,14 @@ npx @goqoo/trunks
 # trunks の設定ファイルを対話的に作成
 npx @goqoo/trunks init
 
+# 型チェック（tsc --noEmit）
+yarn typecheck
+
 # コードフォーマット（.md は対象外）
 yarn format
+
+# フォーマット確認のみ
+yarn format:check
 ```
 
 ## フィールド型生成（trunks）
